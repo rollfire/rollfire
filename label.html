@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset = "UTF-8">
+</head>
+<body>
+  <h1>HTML_IO Study</h1>
+    <h5><a href = "index.html"> home</a></h5>
+    <h5><a href ="method.html">method = get,post</a></h5>
+
+    <form action="http://localhost/login.php">
+<!--레이블 지정시 텍스트 클릭만해도 input필드로 넘어간다.
+레이블이 input필드를 가르키는 것이기 때문에
+연결상태??
+ -->
+    <p><label for="id_txt">text</label> :
+      <input id="id_txt"type="text" name="id"></p>
+    <p><label for="pwd_txt">password</label> :
+      <input id="pwd_txt"type="password" name="pwd"></p>
+    <p>
+      <label>textarea:
+      <textarea cols="50" rows="10" name="text"> </textarea>
+      </label>
+    </p>
+
+    <p> <label>
+        <input type="checkbox" name= "color" value = "red">붉은색
+        </label>
+      </p>
+      <p>
+        <label for = "color_blue">
+          <input id ="color_blue" type ="checkbox" name="color2" value = "blue">파란색
+        </label>
+</p>
+    <input type="submit">
+</form>
+</body>
+<html>

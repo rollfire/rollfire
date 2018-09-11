@@ -1,0 +1,73 @@
+
+body{
+  margin:0;
+}
+a{
+color: black;
+text-decoration: none;
+}
+h1{
+  font-size:45px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0; /*테두리와 테두리사이의 간격*/
+   padding: 20px; /*컨텐츠와 테두리의 간격 */
+}
+h5{
+  padding: 0px;
+}
+
+ol{
+  border-right: 1px solid gray;
+  width:100px;
+  margin:0;
+  padding:20px;
+}
+ul{
+  padding: 0px;
+}
+
+.active{
+  color: red;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+
+}
+#grid ol{
+  padding-left: 33px;
+}
+#grid #article{
+  padding-left: 25px;
+}
+@media (max-width:800px) {
+  #grid{
+    display: block;
+  }
+  ol{
+    border-right:none;
+  }
+  h1{
+    border-bottom: none;
+  }
+
+
+}
+#first{
+  color : green;
+}
+.jjs{
+  color: red;
+  font-weight: bold;
+}
+
+/*
+결론!!
+id 선택자 >>> 클래스 선택자 >>> 태그선택자
+늦게 나와도 빨리나와도 선택자 우선순위!
+같은 우선순위라면 나중에 나오는게 높다?
+id값은 딱 한번만 나와야 한다?
+id의 핵심은 중복되면 안된다. active가 썼기때문에 유일무이한 값이다.
+
+ */

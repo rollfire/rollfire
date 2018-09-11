@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title></title>
+  </head>
+  <body>
+    <form action="../index.html" autocomplete="on" method="post">
+  숫자만 :<input type="number" name= "age" min="10" max="15" ><br>
+  년월일 :<input type="date" name="datev"><br>
+  년월:<input type="month" name="month"><br>
+  주?:<input type="week" name="weekv" size="30"><br>
+  시간:<input type="time" name="timev"><br>
+  이메일:<input type="email" name="emailv"><br>
+  검색이다란 명시:<input type="search" name="search"><br>
+  전화번호 : <input type="tel" name="telv"><br>
+  url 이다 : <input type="url" name="urlv"><br>
+  range : <input type="range" name="rangev" min="0" max = "10"><br>
+
+<!-- autocomplete 는 자동완성
+placeholder 회색글자? 미리 알려주기
+-->
+ <input type="text" name="id"
+ value="" placeholder="id를 입력하세요"
+ autofocus required pattern="[a-zA-Z].+[0-9]"> <br>
+ <!--required 는 유효성 검사!!
+     pattern는 강력하면서도 어렵?
+-->
+비밀번호 : <input type="password" name="pwd" value="" autocomplete="off"
+placeholder="비밀번호를 입력해주세요."
+>
+
+
+<input type="submit" value="제출">
+    </form>
+  </body>
+</html>
